@@ -1,1 +1,1 @@
-fetch("api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=1e88f1bc9b5f8c56e02828ddcd511ef1")
+fetch("https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=1e88f1bc9b5f8c56e02828ddcd511ef1")

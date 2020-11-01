@@ -11,7 +11,34 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+  </nav>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-4 left-background">
+        <h3>Search for a City:</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary bg-primary text-white" type="button"
+              id="button-addon2">Search</button>
+          </div>
+          <div>
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">right</div>
+    </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
