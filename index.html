@@ -33,10 +33,6 @@
           <div class="row m-3">
             <ul class="list-group">
               <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
             </ul>
           </div>
         </div>
@@ -44,60 +40,59 @@
       <div class="col-xl-8">
         <div class="row m-3">
           <div class="col-xl-12 border rounded">
-            <h3>Atlanta (8/15/2019)</h3>
+            <h3 id="today">Atlanta</h3>
             <span class="oi oi-cloudy"></span>
 
-            <p id="todays-temp">Temperature:</p>
-            <p id="todays-humidity">Humidity:</p>
-            <p id="todays-wind">Wind Speed:</p>
-            <p id="todays-index">UV Index:</p>
+            <p id="todays-temp">Temperature: </p>
+            <p id="todays-humidity">Humidity: </p>
+            <p id="todays-wind">Wind Speed: </p>
+            <p id="todays-index">UV Index: </p>
 
           </div>
           <div class="row mt-3">
             <div class="col-xl-12">
               <h3>5-Day Forecast:</h3>
-              <div class="card-deck">
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Date</h5>
-                    <span class="oi oi-cloudy"></span>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
-                    </p>
-                  </div>
+            </div>
+            <div class="card-deck col-xl-12">
+              <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                  <h5 id="t-plus-1" class="card-title">Date</h5>
+                  <span class="oi oi-cloudy"></span>
+                  <p class="card-text">Temp: </p>
+                  <p class="card-text">Humidity: </p>
                 </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Date</h5>
-                    <span class="oi oi-sun"></span>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
-                    </p>
-                  </div>
+              </div>
+              <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                  <h5 id="t-plus-2" class="card-title">Date</h5>
+                  <span class="oi oi-sun"></span>
+                  <p class="card-text">Temp: </p>
+                  <p class="card-text">Humidity: </p>
+                  </p>
                 </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Date</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
-                    </p>
-                  </div>
+              </div>
+              <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                  <h5 id="t-plus-3" class="card-title">Date</h5>
+                  <p class="card-text">Temp: </p>
+                  <p class="card-text">Humidity: </p>
+                  </p>
                 </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Date</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
-                    </p>
-                  </div>
+              </div>
+              <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                  <h5 id="t-plus-4" class="card-title">Date</h5>
+                  <p class="card-text">Temp: </p>
+                  <p class="card-text">Humidity: </p>
+                  </p>
                 </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Date</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
-                    </p>
-                  </div>
+              </div>
+              <div class="card text-white bg-primary mb-3" style="max-width: 100%;">
+                <div class="card-body">
+                  <h5 id="t-plus-5" class="card-title">Date</h5>
+                  <p class="card-text">Temp: </p>
+                  <p class="card-text">Humidity: </p>
+                  </p>
                 </div>
               </div>
             </div>
@@ -106,15 +101,14 @@
       </div>
     </div>
   </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 
