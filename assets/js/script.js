@@ -1,6 +1,6 @@
 // add dates to the page
 today = $("#today")
-  .text(moment().format("[cityName] (MM/DD/YYYY)"));
+  .text(moment().format("(MM/DD/YYYY)"));
 
 tPlusOne = $("#t-plus-1")
   .text(moment().add(1, "days").format("MM/DD/YYYY"));
@@ -28,10 +28,10 @@ var getCityWeather = function (cityName) {
       // request was successful
       if (response.ok) {
         response.json().then(function (data) {
-          displayWeather(data, cityName);
+          displayWeather("weather", cityName);
         });
       } else {
-        alert("Error: " + response.statusText);
+        alert("Please enter a valid city name.");
       }
     })
     .catch(function (error) {
@@ -40,8 +40,11 @@ var getCityWeather = function (cityName) {
 }
 
 
-var cityFormEl = document.querySelector("#city-form");
+var cityFormBtn = document.querySelector("#button-addon2");
 var cityNameInputEl = document.querySelector("#city-name");
+var citySearchContainerEl = document.querySelector("#city-search-container")
+var citySearchTerm = document.querySelector("#city-search-term");
+
 
 
 var formSubmitHandler = function (event) {
@@ -56,7 +59,30 @@ var formSubmitHandler = function (event) {
   } else {
     alert("Please enter a valid city name.")
   }
-}
-cityFormEl.addEventListener("submit", formSubmitHandler);
+  // add city to ul
+  // create a container for each search term
+  var searchEL = document.createElement("li");
+  searchEL.classList = "list-group-item";
+  //searchEL.setAttribute("href", )
 
-console.log(apiUrl)
+  // create a span element to hold search term
+  var cityEl = document.createElement("p");
+  cityEl.textContent = cityName;
+
+  //append to container
+  searchEL.appendChild(cityEl);
+
+  citySearchContainerEl.appendChild(cityEl);
+  console.log(cityName)
+
+}
+cityFormBtn.addEventListener("click", formSubmitHandler);
+
+
+
+var displayWeather = function (weather, searchTerm) {
+  // check if api returned results
+  if (weather.length === 0) {
+
+  }
+}
