@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Weather Dashboard</title>
 </head>
@@ -15,18 +17,21 @@
     <span class="navbar-brand mb-0 h1 mx-auto">Weather Dashboard</span>
   </nav>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-4 left-background">
-        <h5 class="p-3">Search for a City:</h5>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary bg-primary text-white" type="button"
-              id="button-addon2">Search</button>
+      <div class="col-4 left-col">
+        <h5 class="py-3">Search for a City:</h5>
+        <div class="row">
+          <div class="input-group m-3">
+            <input type="text" class="form-control" placeholder="City" aria-label="City"
+              aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary bg-primary text-white" type="button"
+                id="button-addon2">Search</button>
+            </div>
           </div>
-          <div>
-            <ul class="list-group py-3">
+          <div class="row m-3">
+            <ul class="list-group">
               <li class="list-group-item">Cras justo odio</li>
               <li class="list-group-item">Dapibus ac facilisis in</li>
               <li class="list-group-item">Morbi leo risus</li>
@@ -37,56 +42,66 @@
         </div>
       </div>
       <div class="col-8">
-        <div class="row">
-          <div class="col-12">
-            top
+        <div class="row m-3">
+          <div class="col-12 border rounded">
+            <h3>Atlanta (8/15/2019)</h3>
+            <span class="oi oi-cloudy"></span>
+
+            <p id="todays-temp">Temperature:</p>
+            <p id="todays-humidity">Humidity:</p>
+            <p id="todays-wind">Wind Speed:</p>
+            <p id="todays-index">UV Index:</p>
+
           </div>
-          <div class="col-12">
-            <h3>5-Day Forecast:</h3>
-            <div class="card-deck">
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Primary card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3>5-Day Forecast:</h3>
+              <div class="card-deck">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <span class="oi oi-cloudy"></span>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Primary card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <span class="oi oi-sun"></span>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Primary card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Primary card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Primary card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Date</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
